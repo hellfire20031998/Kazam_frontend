@@ -1,0 +1,98 @@
+/* App.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+/* Container for App */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Task Input Form */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-input button:disabled {
+  background-color: #b0c4de;
+}
+
+.task-input .error {
+  color: #e53e3e;
+  margin-top: 10px;
+}
+
+/* Task List Styles */
+.task-list-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.task-list-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-list-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.task-list-container li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+}
+
+.task-list-container li:last-child {
+  border-bottom: none;
+}
+
+.task-list-container .loading,
+.task-list-container .error {
+  text-align: center;
+  color: #e53e3e;
+  font-size: 18px;
+}
